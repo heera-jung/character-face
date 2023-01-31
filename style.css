@@ -4,11 +4,19 @@ body {
 	background-color: #ffffff;
 }
 .file-upload {
-	background-color: #ffffff;
-	width: 600px;
+	border-radius:10px;
+    border : solid 1.5px #f6f7fa;
+    background-color : #f6f7fa;
+	width: 914px;
 	margin: 0 auto;
-	padding: 20px;
+	padding : 3% 3%;
 }
+
+
+.container{
+    height : 450px !important;
+}
+
 .file-upload-btn {
 	width: 100%;
 	margin: 0;
@@ -40,6 +48,7 @@ body {
 .file-upload-content {
 	display: none;
 	text-align: center;
+    height : 400px;
 }
 .file-upload-input {
 	position: absolute;
@@ -65,7 +74,7 @@ body {
 	border: 4px dashed #ffffff;
 }
 .image-title-wrap {
-	padding: 0 15px 15px;
+	padding: 30px 15px 15px;
 	color: #222;
 }
 .drag-text {
@@ -78,10 +87,9 @@ body {
 	}
 }
 .file-upload-image {
-	max-height: 200px;
-	max-width: 200px;
+	height: 200px;
+	width: 200px;
 	margin: auto;
-	padding: 20px;
 }
 .nav-distance{
     padding : 2.1% 7.7%;
@@ -98,6 +106,7 @@ body {
 }
 .section{
     margin-top:100px;
+    margin-bottom:20px;
 }
 .title{
     font-family:NanumSquareR;
@@ -108,7 +117,7 @@ body {
 }
 .subtitle{
     font-family:NanumSquareR;
-    font-size:33px;
+    font-size:30px;
     line-height:1.53;
     text-align:center;
     color:#35465d;
@@ -122,13 +131,6 @@ body {
         font-size:2rem;
     }
 }
-.file-upload{
-    width:914px;
-    border-radius:10px;
-    border : solid 1.5px #f6f7fa;
-    background-color : #f6f7fa;
-    padding : 10% 5%;
-}
 
 .image-upload-wrap{
     object-fit:contain;
@@ -137,6 +139,7 @@ body {
     background-color : #ffffff;
     width : 50%;
     margin: 0 auto;
+    margin-top:30px;
 }
 
 .image-upload-wrap:hover{
@@ -165,8 +168,8 @@ img{
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   animation: spin 2s linear infinite;
   text-align:center;
   margin:auto;
@@ -177,6 +180,13 @@ img{
   100% { transform: rotate(360deg); }
 }
 
+.resultMessage{
+    margin-top:15px;
+}
+
+.resultMessagePlus{
+    margin-bottom:30px;
+}
 
 .remove-image {
 	width: 200px;
