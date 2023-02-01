@@ -20,13 +20,13 @@
     <body>
         <nav class="navbar navbar-expand-lg nav-distance">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">캐릭터 테스트</a>
+                <a class="navbar-brand" href="#">キャラクター テスト</a>
                 
                 <div class="languageSelectDiv">
                     <img src="img/translate.svg" class="translateImg">
                     <select id="languageSelect" name="languageSelect" onchange="changeSelect()">
-                        <option value="ko">한국어</option>
                         <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
                         <option value="en">English</option>
                     </select>
                 </div>
@@ -34,8 +34,8 @@
         </nav>
 
         <section class="section">
-            <h1 class="title">캐릭터 테스트</h1>
-            <h2 class="subtitle">나는 어떤 캐릭터와 닮았을까 ? </h2>
+            <h1 class="title">キャラクター テスト</h1>
+            <h2 class="subtitle">私はどんなキャラクターに似ているのか?</h2>
         </section>
 
         <div class="container file-upload">
@@ -49,7 +49,7 @@
                 />
                 <div class="drag-text">
                     <img src="img/upload.svg" class="mt-5 upload">
-                    <h3 class="pb-5 upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+                    <h3 class="pb-5 upload-text">顔の写真をアップしたり、押してアップロードしてくだい！</h3>
                 </div>
             </div>
             <div class="file-upload-content">
@@ -166,56 +166,56 @@
                 var fontColor;
                 switch(prediction[0].className){
                     case "스누피": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="순수하고 상상력이 풍부한 스누피"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="想像力豊かな スヌーピー"
                         fontColor="skyblue";
                         break;
                     
                     case "톰": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="제리의 영원한 앙숙 톰"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="ジェリーのライバル　トム"
                         fontColor="grey";
                         break;
                         
                     case "제리": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="톰의 영원한 앙숙 제리"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="トムのライバル ジェリー"
                         fontColor="Orange";
                         break;
                         
                     case "곰돌이 푸": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="생기발랄 잘 노는 곰돌이 푸"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="優しい　クマのプーさん"
                         fontColor="Orange";
                         break;
                         
                     case "티거": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="명랑 쾌활한 티거"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="いつも明るい ティガー"
                         fontColor="Orange";
                         break;
                     
                     case "미키마우스": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="호기심이 많고 사교적인 미키마우스"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="まるでヒーロー ミッキーマウス"
                         fontColor="black";
                         break;
                     
                      case "주디": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="낙관적이며 밝고 따뜻한 주디"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="正義感が強い ジュディ・ホップス"
                         fontColor="pink";
                         break;
                     
                      case "도날드덕": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="장난꾸러기 도날드덕"
+                        resultMessage="私と似てるキャラクターは?"
+                        resultMessagePlus="どこか憎めない ドナルドダック"
                         fontColor="skyblue";
                         break;
                         
                     default:
-                        resultMessage="알수없음"
-                        resultMessagePlus="다시 시도해주세요! "
+                        resultMessage="もう一度お試しください !"
+                        resultMessagePlus=""
                         
                 }
                 $('#resultMessage').html(resultMessage);
