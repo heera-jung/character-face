@@ -35,7 +35,7 @@
 
         <section class="section">
             <h1 class="title">Characters Test</h1>
-            <h2 class="subtitle">나는 어떤 캐릭터와 닮았을까 ? </h2>
+            <h2 class="subtitle">Which character do I look like?</h2>
         </section>
 
         <div class="container file-upload">
@@ -49,7 +49,7 @@
                 />
                 <div class="drag-text">
                     <img src="img/upload.svg" class="mt-5 upload">
-                    <h3 class="pb-5 upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+                    <h3 class="pb-5 upload-text">Upload a picture of your face or click to upload it !</h3>
                 </div>
             </div>
             <div class="file-upload-content">
@@ -68,7 +68,7 @@
                 
                 <div class="image-title-wrap">
                     <button type="button" onclick="removeUpload()" class="remove-image">
-                         <span >다시하기</span>
+                         <span >Try again</span>
                     </button>
                 </div>
             </div>
@@ -166,56 +166,56 @@
                 var fontColor;
                 switch(prediction[0].className){
                     case "스누피": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="순수하고 상상력이 풍부한 스누피"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="imaginative Snoopy"
                         fontColor="skyblue";
                         break;
                     
                     case "톰": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="제리의 영원한 앙숙 톰"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="Jerry's rival Tom"
                         fontColor="grey";
                         break;
                         
                     case "제리": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="톰의 영원한 앙숙 제리"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="Tom's rival Jerry"
                         fontColor="Orange";
                         break;
                         
                     case "곰돌이 푸": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="생기발랄 잘 노는 곰돌이 푸"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="lively Winnie the Pooh"
                         fontColor="Orange";
                         break;
                         
                     case "티거": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="명랑 쾌활한 티거"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="jovial tigger"
                         fontColor="Orange";
                         break;
                     
                     case "미키마우스": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="호기심이 많고 사교적인 미키마우스"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="Curious Mickey Mouse"
                         fontColor="black";
                         break;
                     
                      case "주디": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="낙관적이며 밝고 따뜻한 주디"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="strong Judith"
                         fontColor="pink";
                         break;
                     
                      case "도날드덕": 
-                        resultMessage="나와 닮은 캐릭터는?"
-                        resultMessagePlus="장난꾸러기 도날드덕"
+                        resultMessage="Which character do I look like?"
+                        resultMessagePlus="naughty Donald Duck"
                         fontColor="skyblue";
                         break;
                         
                     default:
-                        resultMessage="알수없음"
-                        resultMessagePlus="다시 시도해주세요! "
+                        resultMessage="Please try again."
+                        resultMessagePlus=""
                         
                 }
                 $('#resultMessage').html(resultMessage);
